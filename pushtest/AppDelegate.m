@@ -47,7 +47,7 @@ NSString * baseURL = @"https://api.usergrid.com";
     
     // you could use this if you log in as an app services user to associate the Device to your User
 //    if (response.transactionState == kUGClientResponseSuccess) {
-//        response = [self connectEntities: @"users" connectorID: @"me" type: @"devices" connecteeID: deviceId];
+//        response = [usergridClient connectEntities: @"users" connectorID: @"me" type: @"devices" connecteeID: deviceId];
 //    }
     
     if (response.transactionState != kUGClientResponseSuccess) {
