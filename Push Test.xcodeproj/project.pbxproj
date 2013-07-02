@@ -29,6 +29,8 @@
 		C913B2A816E7BEE2007A526E /* UGQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C913B29416E7BEE2007A526E /* UGQuery.m */; };
 		C913B2A916E7BEE2007A526E /* UGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C913B29616E7BEE2007A526E /* UGUser.m */; };
 		C913B2AB16E7CC54007A526E /* sisyphus-i5-back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C913B2AA16E7CC54007A526E /* sisyphus-i5-back.jpg */; };
+		C96E7834178246AF004DD244 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96E7833178246AF004DD244 /* Security.framework */; };
+		C96E7835178246E6004DD244 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = C96E7831178244EA004DD244 /* SSKeychain.m */; };
 		C9AFBD1C16B71BD700D67DA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AFBD1B16B71BD700D67DA3 /* UIKit.framework */; };
 		C9AFBD1E16B71BD700D67DA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AFBD1D16B71BD700D67DA3 /* Foundation.framework */; };
 		C9AFBD2016B71BD700D67DA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AFBD1F16B71BD700D67DA3 /* CoreGraphics.framework */; };
@@ -101,6 +103,9 @@
 		C913B29516E7BEE2007A526E /* UGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UGUser.h; sourceTree = "<group>"; };
 		C913B29616E7BEE2007A526E /* UGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UGUser.m; sourceTree = "<group>"; };
 		C913B2AA16E7CC54007A526E /* sisyphus-i5-back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sisyphus-i5-back.jpg"; sourceTree = "<group>"; };
+		C96E7830178244EA004DD244 /* SSKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		C96E7831178244EA004DD244 /* SSKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		C96E7833178246AF004DD244 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C9AFBD1716B71BD700D67DA3 /* Push Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AFBD1B16B71BD700D67DA3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9AFBD1D16B71BD700D67DA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96E7834178246AF004DD244 /* Security.framework in Frameworks */,
 				C9AFBD1C16B71BD700D67DA3 /* UIKit.framework in Frameworks */,
 				C9AFBD1E16B71BD700D67DA3 /* Foundation.framework in Frameworks */,
 				C9AFBD2016B71BD700D67DA3 /* CoreGraphics.framework in Frameworks */,
@@ -153,6 +159,7 @@
 		C913B26E16E7BEE2007A526E /* UGAPI */ = {
 			isa = PBXGroup;
 			children = (
+				C96E7832178244EF004DD244 /* SSKeychain */,
 				C913B26F16E7BEE2007A526E /* SBJson */,
 				C913B28916E7BEE2007A526E /* UGActivity.h */,
 				C913B28A16E7BEE2007A526E /* UGActivity.m */,
@@ -204,9 +211,19 @@
 			path = SBJson;
 			sourceTree = "<group>";
 		};
+		C96E7832178244EF004DD244 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				C96E7830178244EA004DD244 /* SSKeychain.h */,
+				C96E7831178244EA004DD244 /* SSKeychain.m */,
+			);
+			name = SSKeychain;
+			sourceTree = "<group>";
+		};
 		C9AFBD0C16B71BD700D67DA3 = {
 			isa = PBXGroup;
 			children = (
+				C96E7833178246AF004DD244 /* Security.framework */,
 				C913B26716E6D49A007A526E /* sisyphus-smicon.png */,
 				C913B26516E6D46A007A526E /* sisyphus-icon.png */,
 				C9AFBD2116B71BD700D67DA3 /* Push Test */,
@@ -401,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96E7835178246E6004DD244 /* SSKeychain.m in Sources */,
 				C9AFBD2816B71BD700D67DA3 /* main.m in Sources */,
 				C9AFBD2C16B71BD700D67DA3 /* AppDelegate.m in Sources */,
 				C9AFBD3B16B71BD700D67DA3 /* ViewController.m in Sources */,
